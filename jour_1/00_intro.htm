@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intro</title>
+</head>
+<body>
+<script type="text/javascript">
+	var tableau = [23, 12,67,222,6666]
+
+	for (var i=0 ; i<tableau.length; i++)
+		{
+			console.log(i + ' => ' + tableau[i])
+		}
+///////////////////////////////////////////////////////////
+	tableau.forEach(function(elm){
+		{
+			console.log(elm)
+		}
+
+	})
+////////////////////////////////////////////////////
+	tableau.forEach(function(elm, i){
+		{
+			console.log(i + ' => ' + elm)
+		}
+
+	})
+////////////////////////////////////////////////////
+for (elm of tableau)
+{
+	console.log(elm)
+	elm = 9999
+}
+console.log(elm)
+console.log(tableau)
+//////////////////////////////////////////////////
+
+var monObjet = {
+ ab : 'Alberta',
+ qc : 'Québec',
+ on : 'Ontario'
+}
+
+console.log(monObjet.ab)
+console.log(monObjet['ab'])
+
+///////////////////////////////////////////
+
+for(propriete in monObjet){
+  console.log(propriete  + '=>' + monObjet[propriete])	
+}
+
+
+
+
+
+</script>
+</body>
+</html>
